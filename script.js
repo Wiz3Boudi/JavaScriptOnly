@@ -61,18 +61,53 @@ document.addEventListener('DOMContentLoaded', function () {
             loginLi.appendChild(loginLink);
       }
       createLogin();
+
       function createContentContainer() {
             const contentContainer = document.createElement('main');
             contentContainer.className = 'contentContainer';
             contentContainer.id = 'contentContainer';
             document.body.appendChild(contentContainer);
 
-            // create div for the cards container 
+            const internalContainer = document.createElement('div');
+            internalContainer.className = 'internalContainer';
+            internalContainer.id = 'cardsContainer';
+            contentContainer.appendChild(internalContainer);
 
-            const cardsContainer = document.createElement('div');
-            cardsContainer.className = 'cardsContainer';
-            cardsContainer.id = 'cardsContainer';
-            contentContainer.appendChild(cardsContainer);
+            const bigCArd = document.createElement('div');
+            bigCArd.id = 'bigCArd';
+            bigCArd.classList.add('bigCArd')
+            internalContainer.appendChild(bigCArd);
+            // create  h1
+            const hOne = document.createElement('h1');
+            hOne.textContent = 'New Features';
+            bigCArd.appendChild(hOne)
+            // create pragraph 
+            const pragraph = document.createElement('p');
+            pragraph.textContent = 'Explor our new items and see what is new'
+            bigCArd.appendChild(pragraph);
+            // create ul 
+            function crateMenu() {
+                  const menuContain = document.createElement('ul');
+                  bigCArd.appendChild(menuContain);
+
+                  const listData = [
+                        { text: 'reducing wrinkles and skin discolorations.' },
+                        { text: 'based retinol alternative with antioxidant.' },
+                        { text: 'Promote healthy toe splay and alignment.' },
+                        { text: 'relieving foot pain and improving balance.' },
+                  ]
+                  // console.log(listData)
+                  listData.forEach(function(item, index){
+                        const strong = document.createElement('strong')
+                        strong.textContent = item.text
+                        const list = document.createElement('li')
+                        list.classList.add('list')
+                        list.appendChild(strong)
+                        menuContain.appendChild(list)
+                  })
+            }
+            crateMenu()
+
       }
       createContentContainer()
 

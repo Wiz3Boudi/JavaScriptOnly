@@ -2,6 +2,7 @@
       padding: 0;
       margin: 0;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: gray;
 }
 
 ul {
@@ -71,7 +72,33 @@ nav #loginContainer li a:hover {
 }
 main{
       background-color:aliceblue;
+      max-width: 98%;
       width: 100%;
-      height: 100vh;
       padding-top: 100px;
+      justify-self: center;
+}
+.bigCArd{
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      width: 100%;
+      justify-self: center;
+      gap: 0.5rem;
+      background-color: #cce5fa;
+      padding: 1rem 2rem;
+      justify-content: center;
+      border-radius: 3px;
+      transition: transform 2s ease;
+}
+.bigCArd:hover{
+      transform: scale(1.01);
+      transition: all 2s ease;
+      cursor: pointer;
+}
+.bigCArd p{
+      color: rgb(22, 223, 223);
+}
+.list{
+      list-style:outside;
+      padding: 0.2rem;
 }
