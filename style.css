@@ -31,7 +31,7 @@ nav {
       justify-content: space-around;
       height: 100px;
       align-items: center;
-      box-shadow: 0 0 0 2px #cce5fa;
+      box-shadow: 0 0 0 2px rgb(22, 223, 223);
       background-color: white;
       top: 0;
       left: 0;
@@ -84,7 +84,7 @@ main{
       width: 100%;
       justify-self: center;
       gap: 0.5rem;
-      background-color: #cce5fa;
+      background-color: hwb(202 83% 3%);
       padding: 1rem 2rem;
       justify-content: center;
       border-radius: 3px;
