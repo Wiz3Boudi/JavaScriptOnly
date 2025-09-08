@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const loginLi = document.createElement('li');
             const loginLink = document.createElement('a');
             loginLink.id = 'loginLink';
-            loginLink.href = '#login';
+            loginLink.href = 'https://getingdata.netlify.app';
             loginLink.textContent = 'login'
             loginContainer.appendChild(loginLi);
             loginLi.appendChild(loginLink);
