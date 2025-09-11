@@ -31,7 +31,7 @@ nav {
       justify-content: space-around;
       height: 100px;
       align-items: center;
-      box-shadow: 0 0 0 2px rgb(22, 223, 223);
+      box-shadow: 0 0 2px 2px #9ebff0c9;
       background-color: white;
       top: 0;
       left: 0;
@@ -46,7 +46,7 @@ nav {
 }
 
 nav #loginContainer li {
-      background-color: rgb(22, 223, 223);
+      background-color: #16dfdf;
       padding: 1.3rem;
       border-radius: 50%;
 }
@@ -71,32 +71,57 @@ nav #loginContainer li a:hover {
       align-items: center;
 }
 main{
-      /* background-color:aliceblue; */
       max-width: 98%;
       width: 100%;
-      padding-top: 120px;
+      padding-top: 130px;
       justify-self: center;
 }
-.bigCArd{
-      display: flex;
-      flex-direction: column;
+main .bigCArd{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       max-width: 80%;
       width: 100%;
-      justify-self: center;
-      gap: 0.5rem;
-      background-color: hwb(202 83% 3%);
+      justify-self: start;
+      gap: 3rem;
+      /* background-color:#16dfdf; */
       padding: 1rem 2rem;
       justify-content: center;
       border-radius: 3px;
+      box-shadow: 0 0 4px 1px #9ebff0c9;
+      transition: transform 2s  ease ;
 }
-.bigCArd:hover{
-      transform: scale(1.001);
-      cursor: pointer;
+.contentContainer .bigCArd:hover{
+      transform: scale(1.009);
+      transition: all 1s ease;
 }
-.bigCArd p{
-      color: rgb(22, 223, 223);
+.contentContainer .bigCArd .artical p{
+      color: darkslategray;
 }
 .list{
       list-style:outside;
       padding: 0.2rem;
+}
+.contentContainer .bigCArd .linkGo{
+      display: inline-flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+}
+.contentContainer .bigCArd .linkGo a{
+      color: blue;
+      font-size: 1rem;
+}
+.contentContainer .bigCArd .linkGo p{
+      cursor: pointer;
+}
+.contentContainer .bigCArd .slide img{
+      max-width: 250px;
+      width: 100%;
+      border-radius: 5px;
+}
+.contentContainer .bigCArd .slide{
+      padding-bottom: 2rem;
+}
+.contentContainer .bigCArd .slide:hover{
+      cursor: pointer;
 }
